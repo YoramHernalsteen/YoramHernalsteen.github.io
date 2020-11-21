@@ -6,7 +6,6 @@ import background from "../img/pexels-jonas-svidras-785418.jpg";
 const Styled = styled.div`
    text-align: center;
    font-weight: bold;
-   font-size: 2em;
    background: url(${background}) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -30,10 +29,13 @@ const ColorOverlay = styled.div`
 const BackgroundH2 = styled.h2`
   color: white;
   z-index: 5;
+  font-size: 2em;
 `;
 const BackgroundP = styled.p`
   color: white;
   z-index: 5;
+  margin-bottom: 10em;
+  font-size: 2em;
 `;
 
 
@@ -41,19 +43,42 @@ const BackgroundP = styled.p`
     return <>
         <Styled>
             <ColorOverlay>
-
                 <BackgroundH2>HI, I'M YORAM HERNALSTEEN</BackgroundH2>
                 <BackgroundP>I love solving problems and creating software that adds value to life</BackgroundP>
                 <ProjectsButton/>
             </ColorOverlay>
+
         </Styled>
 
         </>
 }
 
+const LinkStyled = styled(Link)`
+  width: 15%;
+  background-color: white;
+  color: purple;
+  padding: 1em 1em;
+  margin: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  @media (max-width: 720px) {
+        font-size: 0.75em;
+      }
+  @media (min-width: 720px){
+        font-size: 1.25em;
+  }
+  &:hover{
+    background-color: purple;
+    color: white;
+  }
+  border-radius: 25px;
+  
+ 
+`;
+
 function ProjectsButton(){
     return <>
-            <Link to="/portfolio">Check out my portfolio</Link>
-            <Link to="/resume">Check out my resume</Link>
+            <LinkStyled to="/portfolio">Check out my portfolio</LinkStyled>
+            <LinkStyled to="/resume">Check out my resume</LinkStyled>
         </>
 }
