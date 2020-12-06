@@ -13,6 +13,17 @@ const Styled = styled.div`
     -moz-background-size: cover;
     -o-background-size: cover; 
    background-size: cover;
+   @media (max-width: 720px) {
+    width: 100%;
+    height: 125%; /* To compensate for mobile browser address bar space */
+    background-size: 100% 100%;
+      }
+    @media (min-width: 720px) {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+   background-size: cover;
+      }
    width: 100%;
    height: 100vh;
    overflow: auto;
