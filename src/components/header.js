@@ -1,10 +1,12 @@
 import styled from "@emotion/styled";
 import React from "react";
-import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link"
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import background from "../img/pexels-jonas-svidras-785418.jpg";
 
 const Styled = styled.div`
-   text-align: center;
    font-weight: bold;
    background: url(${background}) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -31,29 +33,44 @@ const BackgroundH2 = styled.h2`
   z-index: 5;
   font-size: 2em;
 `;
+const BackgroundH3 = styled.h3`
+  color: white;
+  z-index: 5;
+  font-size: 2em;
+`;
+const StyledSpan=styled.span`
+   background-color: purple;
+   color: white;
+   border-radius: 25px;
+   padding:0 0.25em;
+`;
 const BackgroundP = styled.p`
   color: white;
   z-index: 5;
   margin-bottom: 10em;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: normal;
 `;
+
 
 
  export function Background(){
     return <>
         <Styled>
             <ColorOverlay>
-                <BackgroundH2>HI, I'M YORAM HERNALSTEEN</BackgroundH2>
-                <BackgroundP>I love solving problems and creating software that adds value to life</BackgroundP>
-                <ProjectsButton/>
+                <Container>
+                    <BackgroundH2>HI, I'M YORAM HERNALSTEEN.</BackgroundH2>
+                    <BackgroundH3>I'm a <StyledSpan>software developer.</StyledSpan></BackgroundH3>
+                    <BackgroundP>I love solving problems and creating things that add value to life.</BackgroundP>
+                    <ProjectsButton/>
+                </Container>
             </ColorOverlay>
-
         </Styled>
 
         </>
 }
 
-const LinkStyled = styled(Link)`
+const LinkStyled = styled(HashLink)`
   width: 15%;
   background-color: white;
   color: purple;
@@ -72,13 +89,10 @@ const LinkStyled = styled(Link)`
     color: white;
   }
   border-radius: 25px;
-  
- 
 `;
 
 function ProjectsButton(){
     return <>
-            <LinkStyled to="/portfolio">Check out my portfolio</LinkStyled>
-            <LinkStyled to="/resume">Check out my resume</LinkStyled>
+            <LinkStyled to="#portfolio">Check out my portfolio</LinkStyled>
         </>
 }

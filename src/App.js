@@ -1,21 +1,21 @@
 import React from "react";
 import {HashRouter, Switch, Route} from "react-router-dom";
 import './App.css';
+import Container from "react-bootstrap/Container";
 import {Background} from "./components/header";
+import {Portfolio} from "./components/portfolio";
+import {Navigation} from "./components/navigation";
 
 function App() {
     return (
         <HashRouter basename="/">
-
             <Switch>
                 <Route exact path="/">
+                    <Navigation/>
                     <Background/>
-                </Route>
-                <Route exact path="/portfolio">
-                    <p>portfolio</p>
-                </Route>
-                <Route exact path="/resume">
-                    <p>resume</p>
+                    <Container fluid>
+                        <Portfolio/>
+                    </Container>
                 </Route>
             </Switch>
 
