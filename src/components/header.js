@@ -84,7 +84,12 @@ const LinkStyled = styled(HashLink)`
   margin: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.25em;
+  @media (max-width: 756px){
+      font-size: 0.75em;
+    }
+  @media (min-width: 756px) {
+     font-size: 1.25em;
+      }
   &:hover{
     background-color: purple;
     color: white;
