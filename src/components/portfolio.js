@@ -60,10 +60,18 @@ const LinkStyled = styled.a`
   border-radius: 25px;
 `;
 
+const Anchor=styled.a`
+  display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+`;
+
 
 export function Portfolio() {
     return <>
-        <H1Styled id="portfolio">PORTFOLIO</H1Styled>
+        <Anchor className="anchor" id="portfolio"/>
+        <H1Styled>PORTFOLIO</H1Styled>
         <p>// These are the projects I have worked on the past few years. Have a look around!</p>
         {/*Desino Stage*/}
         <RowSelectHeightI>

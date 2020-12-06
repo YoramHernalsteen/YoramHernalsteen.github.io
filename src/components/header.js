@@ -38,6 +38,7 @@ const BackgroundH2 = styled.h2`
   color: white;
   z-index: 5;
   font-size: 2em;
+  margin-top: 100px;
 `;
 const BackgroundH3 = styled.h3`
   color: white;

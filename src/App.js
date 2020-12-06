@@ -4,14 +4,14 @@ import './App.css';
 import Container from "react-bootstrap/Container";
 import {Background} from "./components/header";
 import {Portfolio} from "./components/portfolio";
-import {Navigation} from "./components/navigation";
+import {NavBar} from "./components/navigation/navbar";
 
 function App() {
     return (
         <HashRouter basename="/">
             <Switch>
                 <Route exact path="/">
-                    <Navigation/>
+                    <NavBar/>
                     <Background/>
                     <Container fluid>
                         <Portfolio/>
