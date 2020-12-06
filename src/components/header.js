@@ -5,24 +5,19 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import background from "../img/pexels-jonas-svidras-785418.jpg";
+import backgroundMobile from "../img/pexels-jonas-svidras-mobile.jpg";
 
 const Styled = styled.div`
    font-weight: bold;
-   background: url(${background}) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-   background-size: cover;
-   @media (max-width: 720px) {
-    width: 100%;
-    height: 125%; /* To compensate for mobile browser address bar space */
-    background-size: 100% 100%;
-      }
-    @media (min-width: 720px) {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-   background-size: cover;
+    @media (max-width: 756px){
+      background: url(${backgroundMobile}) fixed; 
+    }
+    @media (min-width: 756px) {
+      background: url(${background}) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; 
+      background-size: cover;
       }
    width: 100%;
    height: 100vh;
@@ -89,12 +84,7 @@ const LinkStyled = styled(HashLink)`
   margin: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  @media (max-width: 720px) {
-        font-size: 0.75em;
-      }
-  @media (min-width: 720px){
-        font-size: 1.25em;
-  }
+  font-size: 1.25em;
   &:hover{
     background-color: purple;
     color: white;
