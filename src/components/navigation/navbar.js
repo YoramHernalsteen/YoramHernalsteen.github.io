@@ -14,14 +14,19 @@ const Nav = styled.div`
   background: white;
   z-index: 6;
   .brand {
-    padding: 15px 0;
-    font-size: 1.5em ;
+    padding: 15px 0; 
   }    
 `;
 const StyledBrand=styled.h2`
   padding-left: -0.5em;
   padding-right: 0.5em;
   background: linear-gradient(to top, lightgreen 50%, transparent 50%);
+  @media (max-width: 900px) {
+      font-size: 1.5em ;
+      }
+  @media (min-width: 900px) {
+      font-size: 2em ;
+      }
 `;
 export function NavBar(){
     return <>
