@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff799111.chunk.css",
+    "main.js": "/static/js/main.df49db92.chunk.js",
+    "main.js.map": "/static/js/main.df49db92.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cd8c90c0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cd8c90c0.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.38472970.chunk.js": "/static/js/2.38472970.chunk.js",
+    "static/js/2.38472970.chunk.js.map": "/static/js/2.38472970.chunk.js.map",
+    "static/js/3.f847bc10.chunk.js": "/static/js/3.f847bc10.chunk.js",
+    "static/js/3.f847bc10.chunk.js.map": "/static/js/3.f847bc10.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.ff799111.chunk.css.map": "/static/css/main.ff799111.chunk.css.map",
+    "static/js/2.38472970.chunk.js.LICENSE.txt": "/static/js/2.38472970.chunk.js.LICENSE.txt",
+    "static/media/BullSheets_logo_op_donkere_achtergrond.3625151b.png": "/static/media/BullSheets_logo_op_donkere_achtergrond.3625151b.png",
+    "static/media/desino.41898983.png": "/static/media/desino.41898983.png",
+    "static/media/pexels-jonas-svidras-785418.23a5f3fb.jpg": "/static/media/pexels-jonas-svidras-785418.23a5f3fb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd8c90c0.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.38472970.chunk.js",
+    "static/css/main.ff799111.chunk.css",
+    "static/js/main.df49db92.chunk.js"
+  ]
+}
