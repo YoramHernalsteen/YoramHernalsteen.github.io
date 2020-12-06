@@ -59,7 +59,7 @@ const BackgroundP = styled.p`
         <Styled>
             <ColorOverlay>
                 <Container>
-                    <BackgroundH2>HI, I'M YORAM HERNALSTEEN.</BackgroundH2>
+                    <BackgroundH2>HI, I'M YORAM!</BackgroundH2>
                     <BackgroundH3>I'm a <StyledSpan>software developer.</StyledSpan></BackgroundH3>
                     <BackgroundP>I love solving problems and creating things that add value to life.</BackgroundP>
                     <ProjectsButton/>

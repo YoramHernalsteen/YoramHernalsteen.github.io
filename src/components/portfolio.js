@@ -10,14 +10,24 @@ import desinoLogo from "../images/desino.png"
 
 const RowSelectHeightI = styled(Row)`
     min-height: 500px;
-    max-height: 500px;
+    @media (max-width: 720px) {
+        max-height: 1000px;
+      }
+  @media (min-width: 720px){
+         max-height: 500px;
+  }
 `;
 const RowSelectHeightII = styled(Row)`
     min-height: 500px;
-    max-height: 500px;
     background-color: #171a1d;
     opacity: 0.7;
     color: whitesmoke;
+    @media (max-width: 720px) {
+        max-height: 1000px;
+      }
+  @media (min-width: 720px){
+         max-height: 500px;
+  }
 `;
 const ImageSelectHeight = styled(Image)`
     max-height: 500px;
