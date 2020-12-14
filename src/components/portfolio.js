@@ -76,7 +76,7 @@ export function Portfolio() {
         {/*Desino Stage*/}
         <RowSelectHeightI>
             <Col sm={12} md={6}>
-                <h2 className="mt-5">TimeSheetApplication</h2>
+                <h2 className="mt-5">Project Management</h2>
                 <h4>Project brief</h4>
                 <p>This was an internship project.</p>
                 <h4>Technologies</h4>
