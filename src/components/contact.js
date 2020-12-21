@@ -85,11 +85,12 @@ export function Contact(){
                     </Form.Row>
                     <Form.Row>
                         <Col>
-                            {status === "SUCCESS" && <p>Thanks!</p>}
-                            {status !== "NOPE" &&
-                            <Button variant="dark" type="submit">
-                                Submit
-                            </Button>}
+                            {status === "SUCCESS" ? <p>Thanks, I'll be in touch shortly!</p> :
+                             status === "NOPE"? null :
+                                 <Button variant="dark" type="submit">
+                                 Submit
+                             </Button>
+                            }
                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                         </Col>
                     </Form.Row>
