@@ -32,8 +32,7 @@ export function RightNav(props){
         <StyledUl open={open}>
             <li> <HashLink onClick={()=>setOpen(false)} to="#">About me</HashLink> </li>
             <li><HashLink onClick={()=>setOpen(false)} to="#portfolio">Portfolio</HashLink></li>
-            <li>Resume</li>
-            <li><HashLink onClick={()=>setOpen(false)} to="#">Contact</HashLink></li>
+            <li><HashLink onClick={()=>setOpen(false)} to="#contact">Contact</HashLink></li>
         </StyledUl>
         </>
 }

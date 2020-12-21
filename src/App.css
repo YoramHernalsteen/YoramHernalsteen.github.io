@@ -17,3 +17,9 @@
 *{
     font-family: 'JetBrains Mono', monospace;
 }
+
+.icons{
+    font-size: 2.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}

@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import {Background} from "./components/header";
 import {Portfolio} from "./components/portfolio";
 import {NavBar} from "./components/navigation/navbar";
+import {Contact} from "./components/contact";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Background/>
                     <Container fluid>
                         <Portfolio/>
+                        <Contact/>
                     </Container>
                 </Route>
             </Switch>
