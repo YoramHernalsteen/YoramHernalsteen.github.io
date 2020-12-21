@@ -5,6 +5,11 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import styled from "@emotion/styled";
 import { SiGmail, SiGithub, SiLinkedin } from "react-icons/si";
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+init("user_jxstNsmghTfnLE9RvG2D3");
+
+
 
 const H1Styled = styled.h1`
     text-align: center;
@@ -16,10 +21,6 @@ const Anchor = styled.a`
     position: relative;
     top: -75px;
     visibility: hidden;
-`;
-const LinkForm = styled.a`
-  text-decoration: none;
-  color: inherit;
 `;
 const StyledDiv = styled(Row)`
     padding-top:2em ;
@@ -34,20 +35,18 @@ export function Contact(){
     function submitForm(ev){
         ev.preventDefault();
         const form = ev.target;
-        const data = new FormData(form);
-        const xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action);
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (xhr.status === 200) {
-                form.reset();
-                setStatus("SUCCESS");
-            } else {
+        emailjs.sendForm('service_vxzvc54', 'contact_form', form, 'user_jxstNsmghTfnLE9RvG2D3')
+            .then((result) => {
+               setStatus("SUCCESS");
+               console.log(result);
+            }, (error) => {
+                console.log(error.text);
                 setStatus("ERROR");
-            }
-        };
-        xhr.send(data);
+            });
+
+    }
+    function validate() {
+        setStatus("NOPE");
     }
     return <>
         <Anchor className="anchor" id="contact"/>
@@ -60,14 +59,12 @@ export function Contact(){
                     <SiGmail className="icons"/>
                     <SiLinkedin className="icons"/>
                 </p>
-                <p className="text-center">If those don't suit you, feel free to feel in the form via <LinkForm href="https://formspree.io/">Formspree API!</LinkForm></p>
-                <Form onSubmit={()=>submitForm(this)}
-                      action="https://formspree.io/f/xleoogrv"
-                      method="POST">
+                <p className="text-center">If those don't suit you, feel free to fill in the form!</p>
+                <Form onSubmit={submitForm}>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" name="email" />
+                            <Form.Control type="email" placeholder="Enter email" name="user_email" />
                             <Form.Text className="text-muted">
                                 Your email will never be shared!
                             </Form.Text>
@@ -76,9 +73,10 @@ export function Contact(){
                     <Form.Row>
                         <Form.Group as={Col} controlId="formName">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" name="name" />
+                            <Form.Control type="text" placeholder="Enter name" name="user_name" />
                         </Form.Group>
                     </Form.Row>
+                    <input type="text" autoComplete="off" className="check" tabIndex="-1" name="user_adress" onChange={validate} />
                     <Form.Row>
                         <Form.Group as={Col} controlId="formMessage">
                             <Form.Label>Message</Form.Label>
@@ -87,10 +85,11 @@ export function Contact(){
                     </Form.Row>
                     <Form.Row>
                         <Col>
-                            {status === "SUCCESS" ? <p>Thanks!</p> :
-                                <Button variant="dark" type="submit">
-                                    Submit
-                                </Button>}
+                            {status === "SUCCESS" && <p>Thanks!</p>}
+                            {status !== "NOPE" &&
+                            <Button variant="dark" type="submit">
+                                Submit
+                            </Button>}
                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                         </Col>
                     </Form.Row>
