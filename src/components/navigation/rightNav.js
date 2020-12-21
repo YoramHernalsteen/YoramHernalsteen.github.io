@@ -26,13 +26,24 @@ const StyledUl = styled.ul`
     }
   }
 `;
+
+const StyledHashLink = styled(HashLink)`
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #0D2538;
+    &:hover{
+    color: #0D2538;
+    background: lightgreen;
+   
+  }
+`;
 export function RightNav(props){
     const {open, setOpen}=props;
     return <>
         <StyledUl open={open}>
-            <li> <HashLink onClick={()=>setOpen(false)} to="#">About me</HashLink> </li>
-            <li><HashLink onClick={()=>setOpen(false)} to="#portfolio">Portfolio</HashLink></li>
-            <li><HashLink onClick={()=>setOpen(false)} to="#contact">Contact</HashLink></li>
+            <li> <StyledHashLink onClick={()=>setOpen(false)} to="#">About me</StyledHashLink> </li>
+            <li><StyledHashLink onClick={()=>setOpen(false)} to="#portfolio">Portfolio</StyledHashLink></li>
+            <li><StyledHashLink onClick={()=>setOpen(false)} to="#contact">Contact</StyledHashLink></li>
         </StyledUl>
         </>
 }

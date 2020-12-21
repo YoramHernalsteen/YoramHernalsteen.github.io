@@ -12,10 +12,14 @@ const H1Styled = styled.h1`
 `;
 
 const Anchor = styled.a`
-  display: block;
+    display: block;
     position: relative;
     top: -75px;
     visibility: hidden;
+`;
+const LinkForm = styled.a`
+  text-decoration: none;
+  color: inherit;
 `;
 const StyledDiv = styled(Row)`
     padding-top:2em ;
@@ -56,7 +60,7 @@ export function Contact(){
                     <SiGmail className="icons"/>
                     <SiLinkedin className="icons"/>
                 </p>
-                <p className="text-center">If those don't suit you, feel free to feel in the form!</p>
+                <p className="text-center">If those don't suit you, feel free to feel in the form via <LinkForm href="https://formspree.io/">Formspree API!</LinkForm></p>
                 <Form onSubmit={()=>submitForm(this)}
                       action="https://formspree.io/f/xleoogrv"
                       method="POST">
