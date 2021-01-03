@@ -129,19 +129,18 @@ export function Portfolio() {
                 <p>Dummy accounts are (admin) Jan@gmail.com:Jan123456 and Tom@gmail.com:Tom123456 </p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
-                    <IconLink href="https://www.php.net/"><SiPhp className="icons"/></IconLink>
-                    <IconLink href="https://laravel.com/"><SiLaravel className="icons"/></IconLink>
-                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript"><SiJavascript className="icons"/></IconLink>
-                    <IconLink href="https://www.postgresql.org/"><SiPostgresql className="icons"/></IconLink>
-                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/Guide/HTML/HTML5"><SiHtml5 className="icons"/></IconLink>
-                    <IconLink href="https://sass-lang.com/"><SiSass className="icons"/></IconLink>
-                    <IconLink href="https://getbootstrap.com/"><SiBootstrap className="icons"/></IconLink>
-                    <IconLink href="https://www.heroku.com/"><SiHeroku className="icons"/></IconLink>
+                    <IconLink href="https://www.php.net/" target="_blank"><SiPhp className="icons"/></IconLink>
+                    <IconLink href="https://laravel.com/" target="_blank"><SiLaravel className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript" target="_blank"><SiJavascript className="icons"/></IconLink>
+                    <IconLink href="https://www.postgresql.org/" target="_blank"><SiPostgresql className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/Guide/HTML/HTML5" target="_blank"><SiHtml5 className="icons"/></IconLink>
+                    <IconLink href="https://sass-lang.com/" target="_blank"><SiSass className="icons"/></IconLink>
+                    <IconLink href="https://getbootstrap.com/" target="_blank"><SiBootstrap className="icons"/></IconLink>
+                    <IconLink href="https://www.heroku.com/" target="_blank"><SiHeroku className="icons"/></IconLink>
                 </div>
                 <h4 className="mt-2">Demo and Code</h4>
                 <div className="mb-2">
-                    <LinkStyled href="https://www.google.com/">Code</LinkStyled>
-                    <LinkStyled className="ml-5" href="https:://www.github.com">Demo</LinkStyled>
+                    <LinkStyled className="ml-5" href="https://murmuring-hollows-22987.herokuapp.com/" target="_blank">Demo</LinkStyled>
                 </div>
 
             </Col>
@@ -163,19 +162,19 @@ export function Portfolio() {
                 <p>Dummy accounts are: (admin): yoram:yoram and (user) tom:tom123</p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
-                    <IconLink href="https://www.java.com/nl/"><SiJava className="icons"/></IconLink>
-                    <IconLink href="https://spring.io/"><SiSpring className="icons"/></IconLink>
-                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript"><SiJavascript className="icons"/></IconLink>
-                    <IconLink href="https://www.mysql.com/"><SiMysql className="icons"/></IconLink>
-                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/Guide/HTML/HTML5"><SiHtml5 className="icons"/></IconLink>
-                    <IconLink href="https://developer.mozilla.org/en-US/docs/Web/CSS"><SiCss3 className="icons"/></IconLink>
-                    <IconLink href="https://getbootstrap.com/"><SiBootstrap className="icons"/></IconLink>
-                    <IconLink href="https://www.heroku.com/"><SiHeroku className="icons"/></IconLink>
+                    <IconLink href="https://www.java.com/nl/" target="_blank"><SiJava className="icons"/></IconLink>
+                    <IconLink href="https://spring.io/" target="_blank"><SiSpring className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript" target="_blank"><SiJavascript className="icons"/></IconLink>
+                    <IconLink href="https://www.mysql.com/" target="_blank"><SiMysql className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/Guide/HTML/HTML5" target="_blank"><SiHtml5 className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><SiCss3 className="icons"/></IconLink>
+                    <IconLink href="https://getbootstrap.com/" target="_blank"><SiBootstrap className="icons"/></IconLink>
+                    <IconLink href="https://www.heroku.com/" target="_blank"><SiHeroku className="icons"/></IconLink>
                 </div>
                 <h4 className="mt-">Demo and Code</h4>
                 <div className="mb-4">
-                    <LinkStyled href="https://www.google.com/">Code</LinkStyled>
-                    <LinkStyled className="ml-5" href="https:://www.github.com">Demo</LinkStyled>
+                    <LinkStyled href="https://github.com/YoramHernalsteen/Bulllsheet" target="_blank">Code</LinkStyled>
+                    <LinkStyled className="ml-5" href="https://project-bullsheet.herokuapp.com/" target="_blank">Demo</LinkStyled>
                 </div>
             </Col>
             <Col sm={12} md={6} className="h-auto">
@@ -194,15 +193,15 @@ export function Portfolio() {
                 <p>A dummy account is Jan@gmail.com:Jan123</p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
-                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript"><SiJavascript className="icons"/></IconLink>
-                    <IconLink href="https://reactjs.org/"><SiReact className="icons"/></IconLink>
-                    <IconLink href="https://firebase.google.com/"><SiFirebase className="icons"/></IconLink>
-                    <IconLink href="https://github.com/"><SiGithub className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript" target="_blank"><SiJavascript className="icons"/></IconLink>
+                    <IconLink href="https://reactjs.org/" target="_blank"><SiReact className="icons"/></IconLink>
+                    <IconLink href="https://firebase.google.com/" target="_blank"><SiFirebase className="icons"/></IconLink>
+                    <IconLink href="https://github.com/" target="_blank"><SiGithub className="icons"/></IconLink>
                 </div>
                 <h4>Demo and Code</h4>
                 <div className="mb-4">
-                    <LinkStyled href="https://www.google.com/">Code</LinkStyled>
-                    <LinkStyled className="ml-5" href="https:://www.github.com">Demo</LinkStyled>
+                    <LinkStyled href="https://github.com/YoramHernalsteen/FireNote" target="_blank">Code</LinkStyled>
+                    <LinkStyled className="ml-5" href="https://yoramhernalsteen.github.io/FireNote/#/" target="_blank">Demo</LinkStyled>
                 </div>
             </Col>
             <Col sm={12} md={6} className="h-auto">

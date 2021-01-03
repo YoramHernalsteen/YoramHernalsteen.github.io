@@ -29,6 +29,10 @@ const StyledDiv = styled(Row)`
     padding-bottom: 3em;
     color: white;
 `;
+const IconLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;
 
 export function Contact(){
     const[status, setStatus] =useState("");
@@ -55,9 +59,9 @@ export function Contact(){
                 <H1Styled>CONTACT</H1Styled>
                 <p className="text-center">You have any questions? Here are a few ways to contact me!</p>
                 <p className="text-center">
-                    <SiGithub className="icons"/>
-                    <SiGmail className="icons"/>
-                    <SiLinkedin className="icons"/>
+                    <IconLink href="https://github.com/YoramHernalsteen" target="_blank" className="iconLink"><SiGithub className="icons"/></IconLink>
+                    <IconLink href="mailto:yoram.hernalsteen@gmail.com" className="iconLink"><SiGmail className="icons"/></IconLink>
+                    {/*<SiLinkedin className="icons"/>*/}
                 </p>
                 <p className="text-center">If those don't suit you, feel free to fill in the form!</p>
                 <Form onSubmit={submitForm}>

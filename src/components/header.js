@@ -66,10 +66,26 @@ const BackgroundP = styled.p`
         <Styled>
             <ColorOverlay>
                 <Container>
-                    <BackgroundH2>HI, I'M YORAM!</BackgroundH2>
-                    <BackgroundH3>I'm a <StyledSpan>software developer.</StyledSpan></BackgroundH3>
-                    <BackgroundP>I love solving problems and creating things that add value to life.</BackgroundP>
-                    <ProjectsButton/>
+                    <Row>
+                        <Col sm={12}>
+                            <BackgroundH2>HI, I'M YORAM!</BackgroundH2>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={12}>
+                            <BackgroundH3>I'm a <StyledSpan>software developer.</StyledSpan></BackgroundH3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={12}>
+                            <BackgroundP>I love solving problems and creating value.</BackgroundP>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={12}>
+                            <ProjectsButton/>
+                        </Col>
+                    </Row>
                 </Container>
             </ColorOverlay>
         </Styled>
@@ -86,7 +102,7 @@ const LinkStyled = styled(HashLink)`
   text-decoration: none;
   text-transform: uppercase;
   @media (max-width: 756px){
-      font-size: 0.75em;
+      font-size: 1em;
     }
   @media (min-width: 756px) {
      font-size: 1.25em;
