@@ -23,7 +23,7 @@ import {
 } from "react-icons/si";
 import bullSheetLogo from "../images/BullSheets_logo_op_donkere_achtergrond.png";
 import timeLogo from "../images/timeLogo-removebg-preview.png";
-import fireLogo from "../images/fireLogo.png";
+import fireLogo from "../images/kanban-firenote-removebg-preview.png";
 
 
 const RowSelectHeightI = styled(Row)`
@@ -108,8 +108,11 @@ const Anchor = styled.a`
 const IconLink = styled.a`
   text-decoration: none;
   color: inherit;
+   &:hover{
+   text-decoration: none;
+   color: lightgreen;
+   }
 `;
-
 
 export function Portfolio() {
     return <>
@@ -121,12 +124,12 @@ export function Portfolio() {
             <Col sm={12} md={6}>
                 <h2 className="mt-5">Project Management</h2>
                 <h4>Project brief</h4>
-                <p>This webapplication was built during an internship. Whats important here is ease of use. How to as
-                    much stuff as possible with a simple button click. This application lets the administrator add new
+                <p>This webapplication was built during an internship. What's important here is ease of use. How to do get as
+                    much stuff done as possible with a simple button click. This application lets the administrator add new
                     clients, initiatives, projects and even recurring projects. Time and costs can then be added to each
                     project. However, normal users can only add time to projects they are assigned to. It is deployed on
                     Heroku, this means it can take a while for the server to spin up. </p>
-                <p>Dummy accounts are (admin) Jan@gmail.com:Jan123456 and Tom@gmail.com:Tom123456 </p>
+                <p>Dummy accounts are (admin) Jan@gmail.com:Jan123456 and (user) Tom@gmail.com:Tom123456 </p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
                     <IconLink href="https://www.php.net/" target="_blank"><SiPhp className="icons"/></IconLink>
@@ -145,7 +148,7 @@ export function Portfolio() {
 
             </Col>
             <Col sm={12} md={6} className="h-auto">
-                <ImageSelectHeight className="" src={timeLogo} rounded fluid/>
+                <ImageSelectHeight className="mt-5" src={timeLogo} rounded fluid/>
             </Col>
         </RowSelectHeightI>
         {/*BULLSHEET*/}
@@ -153,7 +156,7 @@ export function Portfolio() {
             <Col sm={12} md={6}>
                 <h2 className="mt-5">Project Bullsheet</h2>
                 <h4>Project brief</h4>
-                <p>Bullsheet is a webapplication that digitalizes the use of callsheets in the entertainment sector. It
+                <p className="paragraph">Bullsheet is a webapplication that digitalizes the use of callsheets in the entertainment sector. It
                     manages callsheets more efficiently and offers the possibility to edit callsheets or use other
                     callsheets as a template to build on. It offers a built-in messaging service to quickly communicate
                     if needed. If a delay occurs, the callsheet gets automatically edited with the click of a button.
@@ -178,7 +181,7 @@ export function Portfolio() {
                 </div>
             </Col>
             <Col sm={12} md={6} className="h-auto">
-                <ImageSelectHeight className="" src={bullSheetLogo} rounded fluid/>
+                <ImageSelectHeight className="mt-5" src={bullSheetLogo} rounded fluid/>
             </Col>
         </RowSelectHeightII>
         <RowSelectHeightILast>
@@ -188,7 +191,7 @@ export function Portfolio() {
                 <p>FireNote was my first application built with a JavaScript Framework. It was used as a learning
                     device to learn React. Since I wanted to focus on the frontend, I used Cloud firestore as a (Nosql)
                     backend as a service.
-                    It uses the authorization Firebase offers. FireNote is a note/task application that tracks your
+                    It uses the authorization Firebase offers. FireNote is a note-taking/task-making application that tracks your
                     tasks and their status. It is deployed on gitpages. </p>
                 <p>A dummy account is Jan@gmail.com:Jan123</p>
                 <h4>Technologies</h4>
@@ -205,7 +208,7 @@ export function Portfolio() {
                 </div>
             </Col>
             <Col sm={12} md={6} className="h-auto">
-                <ImageSelectHeight className="" src={fireLogo} rounded fluid/>
+                <ImageSelectHeight className="mt-5" src={fireLogo} rounded fluid/>
             </Col>
         </RowSelectHeightILast>
     </>

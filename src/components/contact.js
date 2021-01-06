@@ -32,6 +32,10 @@ const StyledDiv = styled(Row)`
 const IconLink = styled.a`
   text-decoration: none;
   color: inherit;
+   &:hover{
+   text-decoration: none;
+   color: lightgreen;
+   }
 `;
 
 export function Contact(){
