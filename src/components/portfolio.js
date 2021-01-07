@@ -162,7 +162,7 @@ export function Portfolio() {
                     if needed. If a delay occurs, the callsheet gets automatically edited with the click of a button.
                     For more analysis, reports can be downloaded later (in excel). It is deployed on Heroku, this means
                     it can take a while for the server to spin up. </p>
-                <p>Dummy accounts are: (admin): yoram:yoram and (user) tom:tom123</p>
+                <p>Dummy accounts are: (admin): yoram:yoram and (user) gebruiker3:password</p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
                     <IconLink href="https://www.java.com/nl/" target="_blank"><SiJava className="icons"/></IconLink>
