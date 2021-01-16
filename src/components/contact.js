@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import styled from "@emotion/styled";
-import { SiGmail, SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGmail, SiGithub } from "react-icons/si";
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_jxstNsmghTfnLE9RvG2D3");

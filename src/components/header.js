@@ -48,7 +48,9 @@ const BackgroundH3 = styled.h3`
 const StyledSpan=styled.span`
    background: linear-gradient(to top, purple 50%, transparent 50%);
    color: white;
-   border-radius: 25px;
+   @media (min-width: 576px){
+     border-radius: 25px;
+    }
    padding:0 0.25em;
 `;
 const BackgroundP = styled.p`
