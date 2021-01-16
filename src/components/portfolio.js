@@ -141,7 +141,7 @@ export function Portfolio() {
                     <IconLink href="https://getbootstrap.com/" target="_blank"><SiBootstrap className="icons"/></IconLink>
                     <IconLink href="https://www.heroku.com/" target="_blank"><SiHeroku className="icons"/></IconLink>
                 </div>
-                <h4 className="mt-2">Demo and Code</h4>
+                <h4 className="mt-2">Demo</h4>
                 <div className="mb-2">
                     <LinkStyled className="ml-5" href="https://murmuring-hollows-22987.herokuapp.com/" target="_blank">Demo</LinkStyled>
                 </div>
@@ -174,7 +174,7 @@ export function Portfolio() {
                     <IconLink href="https://getbootstrap.com/" target="_blank"><SiBootstrap className="icons"/></IconLink>
                     <IconLink href="https://www.heroku.com/" target="_blank"><SiHeroku className="icons"/></IconLink>
                 </div>
-                <h4 className="mt-">Demo and Code</h4>
+                <h4 className="mt-">Code and Demo</h4>
                 <div className="mb-4">
                     <LinkStyled href="https://github.com/YoramHernalsteen/Bulllsheet" target="_blank">Code</LinkStyled>
                     <LinkStyled className="ml-5" href="https://project-bullsheet.herokuapp.com/" target="_blank">Demo</LinkStyled>
@@ -201,7 +201,7 @@ export function Portfolio() {
                     <IconLink href="https://firebase.google.com/" target="_blank"><SiFirebase className="icons"/></IconLink>
                     <IconLink href="https://github.com/" target="_blank"><SiGithub className="icons"/></IconLink>
                 </div>
-                <h4>Demo and Code</h4>
+                <h4>Code and Demo</h4>
                 <div className="mb-4">
                     <LinkStyled href="https://github.com/YoramHernalsteen/FireNote" target="_blank">Code</LinkStyled>
                     <LinkStyled className="ml-5" href="https://yoramhernalsteen.github.io/FireNote/#/" target="_blank">Demo</LinkStyled>
