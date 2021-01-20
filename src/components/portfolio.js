@@ -52,7 +52,7 @@ const RowSelectHeightI = styled(Row)`
     }
 `;
 
-const RowSelectHeightILast = styled(Row)`
+/*const RowSelectHeightILast = styled(Row)`
     min-height: 500px;
     @media (max-width: 768px) {
         max-height: 1500px;
@@ -64,7 +64,7 @@ const RowSelectHeightILast = styled(Row)`
          max-height: 750px;
     }
     margin-bottom: 5em;
-`;
+`;*/
 
 const RowSelectHeightII = styled(Row)`
     min-height: 500px;
@@ -179,11 +179,12 @@ export function Portfolio() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const comment = "//";
 
     return <>
         <Anchor className="anchor" id="portfolio"/>
         <H1Styled>PORTFOLIO</H1Styled>
-        <p>// These are some projects I have worked on the past few years. Have a look around!</p>
+        <p>{comment}These are some projects I have worked on the past few years. Have a look around!</p>
         {/*Desino Stage*/}
         <RowSelectHeightI>
             <Col sm={12} md={6}>
@@ -403,15 +404,15 @@ export function Portfolio() {
                 <ImageSelectHeight className="mt-5" src={fireLogo} rounded fluid/>
             </Col>
         </RowSelectHeightI>
-        <RowSelectHeightII>
+        <RowSelectHeightIILast>
             <Col sm={12} md={6}>
                 <h2 className="mt-5">StudyPlanner</h2>
                 <h4>Project brief</h4>
                 <p>StudyPlanner is a personal project I wrote to more efficiently track my studies. StudyPlanner allows
-                    me to add courses per semester and give these courses a difficulty rating.
-                    This difficulty rating will then be used to track whether my progress is going as needed. Users can
-                    add chapters per course and indicate whether they started with the chapter or it it's already done.
-                    Users can give each course a different color as to personalize the application.It is deployed on
+                    users to add courses per semester and give these courses a difficulty rating.
+                    This difficulty rating will then be used to track whether the users progress is going as wanted. Users can
+                    add chapters per course and indicate whether they already started with the chapter and if it's already done.
+                    Users can also give each course a different color as to personalize the application.It is deployed on
                     Heroku, this means
                     it can take a while for the server to spin up.</p>
                 <p>A dummy account is Jan@gmail.com:Jan123456</p>
@@ -441,6 +442,6 @@ export function Portfolio() {
             <Col sm={12} md={6} className="h-auto">
                 <ImageSelectHeight className="mt-5" src={studyplannerLogo} rounded fluid/>
             </Col>
-        </RowSelectHeightII>
+        </RowSelectHeightIILast>
     </>
 }
