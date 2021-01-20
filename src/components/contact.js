@@ -24,10 +24,9 @@ const Anchor = styled.a`
 `;
 const StyledDiv = styled(Row)`
     padding-top:2em ;
-    background-color: #171a1d;
-    opacity: 0.7;
+    background-color: white;
     padding-bottom: 3em;
-    color: white;
+    color: black;
 `;
 const IconLink = styled.a`
   text-decoration: none;
