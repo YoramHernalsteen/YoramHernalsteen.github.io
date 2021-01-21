@@ -324,10 +324,10 @@ export function Portfolio() {
                             src={desino_api}
                             alt="API"
                         />
+                        <StyledCarouselInfo>
+                            <p>API</p>
+                        </StyledCarouselInfo>
                     </Carousel.Item>
-                    <StyledCarouselInfo>
-                        <p>API</p>
-                    </StyledCarouselInfo>
                 </Carousel>
             </Modal.Body>
             <Modal.Footer>
