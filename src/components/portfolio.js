@@ -403,7 +403,7 @@ export function Portfolio() {
                 </div>
             </Col>
             <Col sm={12} md={6} className="h-auto">
-                <ImageSelectHeight className="mt-5" src={fireLogo} rounded fluid/>
+                <ImageSelectHeight className="mt-5 mb-3" src={fireLogo}  rounded fluid/>
             </Col>
         </RowSelectHeightI>
         <RowSelectHeightIILast>
