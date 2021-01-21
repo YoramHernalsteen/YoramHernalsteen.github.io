@@ -195,8 +195,7 @@ export function Portfolio() {
                     clients, initiatives, projects and even recurring projects. Time and costs can then be added to each
                     project. However, normal users can only add time to projects they are assigned to. The ultimate goal
                     of the application is to do an operational analysis of the projects and contracts (time value, time cost, budget, revenue,profit). It will calculate KPI's (key
-                    performance indicators) to measure the well-being of these projects and contracts. An API was created to let other tools (Qliksense, ...) extract the data.  It is deployed on
-                    Heroku, this means it can take a while for the server to spin up. </p>
+                    performance indicators) to measure the well-being of these projects and contracts. An API was created to let other tools (QlikSense, ...) extract the data. </p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
                     <IconLink href="https://www.php.net/" target="_blank"><SiPhp className="icons"/></IconLink>
@@ -214,7 +213,7 @@ export function Portfolio() {
                 </div>
                 <h4 className="mt-2">Demo</h4>
                 <div className="mb-2">
-                    <ButtonStyled className="ml-5" onClick={handleShow}>Galery</ButtonStyled>
+                    <ButtonStyled className="ml-5" onClick={handleShow}>Gallery</ButtonStyled>
                 </div>
 
             </Col>
@@ -236,7 +235,7 @@ export function Portfolio() {
                         />
 
                         <StyledCarouselInfo>
-                            <h3>All clients</h3>
+                            <p>All clients</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -246,7 +245,7 @@ export function Portfolio() {
                             alt="initiatives"
                         />
                         <StyledCarouselInfo>
-                            <h3>Initiatives</h3>
+                            <p>Initiatives</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -256,7 +255,7 @@ export function Portfolio() {
                             alt="projects"
                         />
                         <StyledCarouselInfo>
-                            <h3>Projects</h3>
+                            <p>Projects</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -276,7 +275,7 @@ export function Portfolio() {
                             alt="Contracts"
                         />
                         <StyledCarouselInfo>
-                            <h3>Contracts</h3>
+                            <p>Contracts</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -286,7 +285,7 @@ export function Portfolio() {
                             alt="KPI recurring"
                         />
                         <StyledCarouselInfo>
-                            <h3>KPI's for contracts</h3>
+                            <p>KPI's for contracts</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -296,7 +295,7 @@ export function Portfolio() {
                             alt="Cost entry"
                         />
                         <StyledCarouselInfo>
-                            <h3>Cost entry</h3>
+                            <p>Cost entry</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -306,7 +305,7 @@ export function Portfolio() {
                             alt="Time entry"
                         />
                         <StyledCarouselInfo>
-                            <h3>Time entry</h3>
+                            <p>Time entry</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -316,7 +315,7 @@ export function Portfolio() {
                             alt="Time entries for projects"
                         />
                         <StyledCarouselInfo>
-                            <h3>Time entries for project</h3>
+                            <p>Time entries for project</p>
                         </StyledCarouselInfo>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -326,6 +325,9 @@ export function Portfolio() {
                             alt="API"
                         />
                     </Carousel.Item>
+                    <StyledCarouselInfo>
+                        <p>API</p>
+                    </StyledCarouselInfo>
                 </Carousel>
             </Modal.Body>
             <Modal.Footer>

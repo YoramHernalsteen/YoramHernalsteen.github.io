@@ -41,9 +41,9 @@ export function RightNav(props){
     const {open, setOpen}=props;
     return <>
         <StyledUl open={open}>
-            <li> <StyledHashLink onClick={()=>setOpen(false)} to="#">About me</StyledHashLink> </li>
-            <li><StyledHashLink onClick={()=>setOpen(false)} to="#portfolio">Portfolio</StyledHashLink></li>
-            <li><StyledHashLink onClick={()=>setOpen(false)} to="#contact">Contact</StyledHashLink></li>
+            <li> <StyledHashLink onClick={()=>setOpen(false)} to="#">about me</StyledHashLink> </li>
+            <li><StyledHashLink onClick={()=>setOpen(false)} to="#portfolio">portfolio</StyledHashLink></li>
+            <li><StyledHashLink onClick={()=>setOpen(false)} to="#contact">contact</StyledHashLink></li>
         </StyledUl>
         </>
 }
