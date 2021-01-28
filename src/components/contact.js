@@ -45,9 +45,7 @@ export function Contact(){
         emailjs.sendForm('service_vxzvc54', 'contact_form', form, 'user_jxstNsmghTfnLE9RvG2D3')
             .then((result) => {
                setStatus("SUCCESS");
-               console.log(result);
             }, (error) => {
-                console.log(error.text);
                 setStatus("ERROR");
             });
 
@@ -71,7 +69,7 @@ export function Contact(){
                     <Form.Row>
                         <Form.Group as={Col} controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" name="user_email" />
+                            <Form.Control type="email" placeholder="Enter email" name="user_email" required />
                             <Form.Text className="text-muted">
                                 Your email will never be shared!
                             </Form.Text>
@@ -80,14 +78,14 @@ export function Contact(){
                     <Form.Row>
                         <Form.Group as={Col} controlId="formName">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" name="user_name" />
+                            <Form.Control type="text" placeholder="Enter name" name="user_name" required />
                         </Form.Group>
                     </Form.Row>
                     <input type="text" autoComplete="off" className="check" tabIndex="-1" name="user_adress" onChange={validate} />
                     <Form.Row>
                         <Form.Group as={Col} controlId="formMessage">
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows={3} placeholder="Send me a message" name="message" />
+                            <Form.Control as="textarea" rows={3} placeholder="Send me a message" name="message" required />
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
