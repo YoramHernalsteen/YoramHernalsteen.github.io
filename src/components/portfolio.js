@@ -28,6 +28,7 @@ import bullSheetLogo from "../images/BullSheets_logo_op_donkere_achtergrond.png"
 import timeLogo from "../images/timeLogo-removebg-preview.png";
 import fireLogo from "../images/kanban-firenote-removebg-preview.png";
 import studyplannerLogo from "../images/study-background-design_1300-184-removebg-preview.png"
+import websocker from "../images/socket.png";
 //DESINO
 import desino_api from "../images/desino/desino_api.png";
 import desino_clients from "../images/desino/desino_clients.png";
@@ -39,6 +40,7 @@ import desino_kpi_recurring from "../images/desino/desino_kpi_recurring.png";
 import desino_ongoing from "../images/desino/desino_ongoing.png";
 import desino_recurring from "../images/desino/desino_recurring.png";
 import desino_time_entry from "../images/desino/desino_time_entry.png";
+
 const RowSelectHeightI = styled(Row)`
     min-height: 500px;
     @media (max-width: 768px) {
@@ -52,7 +54,7 @@ const RowSelectHeightI = styled(Row)`
     }
 `;
 
-/*const RowSelectHeightILast = styled(Row)`
+const RowSelectHeightILast = styled(Row)`
     min-height: 500px;
     @media (max-width: 768px) {
         max-height: 1500px;
@@ -64,7 +66,7 @@ const RowSelectHeightI = styled(Row)`
          max-height: 750px;
     }
     margin-bottom: 5em;
-`;*/
+`;
 
 const RowSelectHeightII = styled(Row)`
     min-height: 500px;
@@ -81,7 +83,7 @@ const RowSelectHeightII = styled(Row)`
          max-height: 750px;
     }
 `;
-const RowSelectHeightIILast = styled(Row)`
+/*const RowSelectHeightIILast = styled(Row)`
     min-height: 500px;
     background-color: #171a1d;
     opacity: 0.7;
@@ -96,7 +98,7 @@ const RowSelectHeightIILast = styled(Row)`
          max-height: 750px;
     }
     margin-bottom: 5em;
-`;
+`;*/
 const ImageSelectHeight = styled(Image)`
     max-height: 500px;
     display: block;
@@ -174,6 +176,9 @@ const IconLink = styled.a`
 const StyledCarouselInfo = styled(Carousel.Caption)`
  color: black;
 `
+const StyledChange = styled(Row)`
+  height: 10em;
+`;
 
 export function Portfolio() {
     const [show, setShow] = useState(false);
@@ -183,19 +188,61 @@ export function Portfolio() {
 
     return <>
         <Anchor className="anchor" id="portfolio"/>
-        <H1Styled>PORTFOLIO</H1Styled>
-        <p>{comment}These are some projects I have worked on the past few years. Have a look around!</p>
-        {/*Desino Stage*/}
+        <StyledChange>
+            <Col>
+                <H1Styled>PORTFOLIO</H1Styled>
+                <p>{comment}These are some projects I have worked on the past few years. Have a look around!</p>
+            </Col>
+        </StyledChange>
+        {/*WEBSOCKET*/}
         <RowSelectHeightI>
+            <Col sm={12} md={6}>
+                <h2 className="mt-5">JavaChat</h2>
+                <h4>Project brief</h4>
+                <p>JavaChat of WebSocket used for a chat application. Communication will be
+                    bi-directional, so either server or client can initiate sending a message. Client and server
+                    communication are also independent (full duplex communication). This application also uses STOMP
+                    (Simple Text Oriented Messaging Protocol). While WebSocket is a communication protocol, STOMP
+                    describes the format of the exchanged messages between client and server.
+                </p>
+                <p> The client is built with React and uses react-stomp to communicate with the Java server.
+                    Asynchronous functions are used for user experience while spinning up the server. Heroku can take a bit to spin up.</p>
+                <h4>Technologies</h4>
+                <div className="mb-3">
+                    <IconLink href="https://www.java.com/nl/" target="_blank"><SiJava className="icons"/></IconLink>
+                    <IconLink href="https://spring.io/" target="_blank"><SiSpring className="icons"/></IconLink>
+                    <IconLink href="https://developer.mozilla.org/nl/docs/Web/JavaScript" target="_blank"><SiJavascript
+                        className="icons"/></IconLink>
+                    <IconLink href="https://reactjs.org/" target="_blank"><SiReact className="icons"/></IconLink>
+                    <IconLink href="https://www.heroku.com/" target="_blank"><SiHeroku className="icons"/></IconLink>
+                </div>
+                <h4 className="mt-">Code and Demo</h4>
+                <div className="mb-4">
+                    <LinkStyled href="https://github.com/YoramHernalsteen/JavaChatServer" target="_blank">Server code</LinkStyled>
+                    <LinkStyled href="https://github.com/YoramHernalsteen/JavaChatClient" target="_blank">Client code</LinkStyled>
+                    <LinkStyled className="ml-5" href="https://yoramhernalsteen.github.io/JavaChatClient/"
+                                target="_blank">Demo</LinkStyled>
+                </div>
+            </Col>
+            <Col sm={12} md={6} className="h-auto">
+                <ImageSelectHeight className="mt-5" src={websocker} rounded fluid/>
+            </Col>
+        </RowSelectHeightI>
+        {/*Desino Stage*/}
+        <RowSelectHeightII>
             <Col sm={12} md={6}>
                 <h2 className="mt-5">Project Management</h2>
                 <h4>Project brief</h4>
-                <p>This webapplication was built during an internship, as such only images as a demo are available. If you want a demo, feel free to send an email to get access. What's important here is ease of use. This application lets the administrator add
+                <p>This webapplication was built during an internship, as such only images as a demo are available. If
+                    you want a demo, feel free to send an email to get access. What's important here is ease of use.
+                    This application lets the administrator add
                     new
                     clients, initiatives, projects and even recurring projects. Time and costs can then be added to each
                     project. However, normal users can only add time to projects they are assigned to. The ultimate goal
-                    of the application is to do an operational analysis of the projects and contracts (time value, time cost, budget, revenue,profit). It will calculate KPI's (key
-                    performance indicators) to measure the well-being of these projects and contracts. An API was created to let other tools (QlikSense, ...) extract the data. </p>
+                    of the application is to do an operational analysis of the projects and contracts (time value, time
+                    cost, budget, revenue,profit). It will calculate KPI's (key
+                    performance indicators) to measure the well-being of these projects and contracts. An API was
+                    created to let other tools (QlikSense, ...) extract the data. </p>
                 <h4>Technologies</h4>
                 <div className="mb-3">
                     <IconLink href="https://www.php.net/" target="_blank"><SiPhp className="icons"/></IconLink>
@@ -220,7 +267,7 @@ export function Portfolio() {
             <Col sm={12} md={6} className="h-auto">
                 <ImageSelectHeight className="mt-5" src={timeLogo} rounded fluid/>
             </Col>
-        </RowSelectHeightI>
+        </RowSelectHeightII>
         <Modal show={show} onHide={handleClose} size="xl">
             <Modal.Header closeButton>
                 <Modal.Title>Project Management</Modal.Title>
@@ -337,7 +384,7 @@ export function Portfolio() {
             </Modal.Footer>
         </Modal>
         {/*BULLSHEET*/}
-        <RowSelectHeightII>
+        <RowSelectHeightI>
             <Col sm={12} md={6}>
                 <h2 className="mt-5">Project Bullsheet</h2>
                 <h4>Project brief</h4>
@@ -374,8 +421,9 @@ export function Portfolio() {
             <Col sm={12} md={6} className="h-auto">
                 <ImageSelectHeight className="mt-5" src={bullSheetLogo} rounded fluid/>
             </Col>
-        </RowSelectHeightII>
-        <RowSelectHeightI>
+        </RowSelectHeightI>
+        {/*FIRENOTE*/}
+        <RowSelectHeightII>
             <Col sm={12} md={6}>
                 <h2 className="mt-5">FireNote</h2>
                 <h4>Project brief</h4>
@@ -403,18 +451,21 @@ export function Portfolio() {
                 </div>
             </Col>
             <Col sm={12} md={6} className="h-auto">
-                <ImageSelectHeight className="mt-5 mb-3" src={fireLogo}  rounded fluid/>
+                <ImageSelectHeight className="mt-5 mb-3" src={fireLogo} rounded fluid/>
             </Col>
-        </RowSelectHeightI>
-        <RowSelectHeightIILast>
+        </RowSelectHeightII>
+        <RowSelectHeightILast>
             <Col sm={12} md={6}>
                 <h2 className="mt-5">StudyPlanner</h2>
                 <h4>Project brief</h4>
                 <p>StudyPlanner is a personal project I wrote to more efficiently track my studies. StudyPlanner allows
                     users to add courses per semester and give these courses a difficulty rating.
-                    This difficulty rating will then be used to track whether the users progress is going as wanted. Users can
-                    add chapters per course and indicate whether they already started with the chapter and if it's already done.
-                    Users can also give each course a different color as to personalize the application.It is deployed on
+                    This difficulty rating will then be used to track whether the users progress is going as wanted.
+                    Users can
+                    add chapters per course and indicate whether they already started with the chapter and if it's
+                    already done.
+                    Users can also give each course a different color as to personalize the application.It is deployed
+                    on
                     Heroku, this means
                     it can take a while for the server to spin up.</p>
                 <p>A dummy account is Jan@gmail.com:Jan123456</p>
@@ -444,6 +495,6 @@ export function Portfolio() {
             <Col sm={12} md={6} className="h-auto">
                 <ImageSelectHeight className="mt-5" src={studyplannerLogo} rounded fluid/>
             </Col>
-        </RowSelectHeightIILast>
+        </RowSelectHeightILast>
     </>
 }
